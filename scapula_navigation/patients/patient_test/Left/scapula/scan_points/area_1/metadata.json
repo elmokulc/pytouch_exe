@@ -1,0 +1,40 @@
+{
+    "camera_manufacturer": "SVS-VISTEK",
+    "camera_model": "SVS_EXO252MU3",
+    "camera_matrix": [
+        [
+            3596.5484025843916,
+            0.0,
+            993.6065016949949
+        ],
+        [
+            0.0,
+            3596.5484025843916,
+            739.9339242712605
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ]
+    ],
+    "distortion_coefficients": [
+        [
+            -0.05714320635572216,
+            -0.030756105970082194,
+            0.0,
+            0.0,
+            1.4399042692901094
+        ]
+    ],
+    "compression": "None",
+    "resolution": "2048X1536",
+    "lens_focal_length": "16",
+    "working_distance": "700",
+    "aruco_marker_size": "xx mm",
+    "aruco_dict": "Aruco 6X6_250",
+    "date": "11/07/2024",
+    "operator": "Unknown",
+    "dataset_type": "navigation",
+    "description": "scapula scan"
+}

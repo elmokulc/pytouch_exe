@@ -1,0 +1,40 @@
+{
+    "camera_manufacturer": "SVS-VISTEK",
+    "camera_model": "SVS_EXO542MU3",
+    "camera_matrix": [
+        [
+            5961.896777469387,
+            0.0,
+            2710.4268166555967
+        ],
+        [
+            0.0,
+            5961.896777469387,
+            1501.9602612198337
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ]
+    ],
+    "distortion_coefficients": [
+        [
+            -0.14692460030792687,
+            0.059248256842283256,
+            0.0,
+            0.0,
+            0.8198594456547127
+        ]
+    ],
+    "compression": "None",
+    "resolution": "5320X3032",
+    "lens_focal_length": "16",
+    "working_distance": "500",
+    "aruco_marker_size": "xx mm",
+    "aruco_dict": "Aruco 6X6_250",
+    "date": "14/06/2024",
+    "operator": "Unknown",
+    "dataset_type": "calibration",
+    "description": "calibration structure"
+}

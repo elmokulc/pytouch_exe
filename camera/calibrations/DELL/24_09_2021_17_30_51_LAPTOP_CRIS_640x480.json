@@ -1,0 +1,38 @@
+{
+    "camera_manufacturer": "DELL",
+    "camera_model": "LAPTOP_CRIS",
+    "camera_matrix": [
+        [
+            499.1509188727193,
+            0.0,
+            310.6207934604613
+        ],
+        [
+            0.0,
+            499.1509188727193,
+            267.42493966731337
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ]
+    ],
+    "distortion_coefficients": [
+        [
+            -0.0215593054017579,
+            0.0032561383290895763,
+            0.0,
+            0.0,
+            -0.0001533759287019704
+        ]
+    ],
+    "compression": "None",
+    "resolution": "640x480",
+    "lens_focal_length": "0",
+    "working_distance": "50",
+    "date": "24/09/2021",
+    "operator": "None",
+    "dataset_type": "camera calibration",
+    "description": "calibration"
+}

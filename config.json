@@ -1,0 +1,18 @@
+{
+    "camera": {
+        "calib_path": "./camera/calibrations/SVS-VISTEK/SVS_EXO252MU3_2048X1536_2024_06_19_09_48_02.json",
+        "camera_ID": 0,
+        "camera_type": "Aravis",
+        "cti_path": "./../../../../../../../opt/mvIMPACT_Acquire/lib/x86_64/mvGenTLProducer.cti",
+        "exposure_time": 12000,
+        "fps": 20,
+        "horizontal_binning": 1,
+        "vertical_binning": 1
+    },
+    "comment": "a json file gathering config datas",
+    "default_repertory": {
+        "default_acquisition_loob": "./acquisition_loob/default",
+        "default_calibration_loob": "./calibration_loob/default",
+        "default_image_repertory": "./calibration_camera/SVS-VISTEK/18_03_2021_SVS_EXO252MU3_2048x1536.json"
+    }
+}

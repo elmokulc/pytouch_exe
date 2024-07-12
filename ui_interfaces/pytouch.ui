@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>837</width>
+    <height>686</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>837</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionQuitter"/>
+    <addaction name="actionRed_marrer"/>
+   </widget>
+   <widget class="QMenu" name="menuEdition">
+    <property name="title">
+     <string>Editio&amp;n</string>
+    </property>
+    <widget class="QMenu" name="menuAction">
+     <property name="title">
+      <string>&amp;Action</string>
+     </property>
+     <addaction name="actionAjouter_rect_ROI"/>
+     <addaction name="actionAjouter_ligne_ROI"/>
+     <addaction name="actionSupprimer_rect_ROI"/>
+     <addaction name="actionSupprimer_ligne_ROI"/>
+    </widget>
+    <addaction name="menuAction"/>
+   </widget>
+   <widget class="QMenu" name="menuRecherche">
+    <property name="title">
+     <string>&amp;Recherche</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuOutils">
+    <property name="title">
+     <string>O&amp;utils</string>
+    </property>
+    <widget class="QMenu" name="menuDebug">
+     <property name="title">
+      <string>&amp;Debug</string>
+     </property>
+     <addaction name="actionPrint_logs"/>
+     <addaction name="actionShow_Physical_Plot_Dock_Widget"/>
+     <addaction name="actionShow_Composite_Plots_Dock_Widget"/>
+    </widget>
+    <addaction name="menuDebug"/>
+   </widget>
+   <widget class="QMenu" name="menuAffichage">
+    <property name="title">
+     <string>Afficha&amp;ge</string>
+    </property>
+    <widget class="QMenu" name="menuVolets">
+     <property name="title">
+      <string>&amp;Volets</string>
+     </property>
+     <addaction name="action_videoStream"/>
+     <addaction name="action_cameraParameters"/>
+     <addaction name="actionComposite_parameters"/>
+     <addaction name="actionLog_console"/>
+     <addaction name="actionNavigation_tools"/>
+     <addaction name="actionTarget_visualizer"/>
+     <addaction name="actionSTL_visualizer"/>
+    </widget>
+    <addaction name="menuVolets"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>Ai&amp;de</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuParam_tres">
+    <property name="title">
+     <string>Param&amp;ètres</string>
+    </property>
+    <addaction name="actionConfigurateur_cam_ra"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuEdition"/>
+   <addaction name="menuParam_tres"/>
+   <addaction name="menuRecherche"/>
+   <addaction name="menuOutils"/>
+   <addaction name="menuAffichage"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>&amp;Quitter</string>
+   </property>
+   <property name="statusTip">
+    <string>Quitter</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionRed_marrer">
+   <property name="text">
+    <string>&amp;Redémarrer</string>
+   </property>
+   <property name="statusTip">
+    <string>Redémarrer</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="action_videoStream">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Video stream</string>
+   </property>
+  </action>
+  <action name="actionThreads_info">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Threads info</string>
+   </property>
+  </action>
+  <action name="actionConfigurateur_cam_ra">
+   <property name="text">
+    <string>&amp;Configurateur caméra</string>
+   </property>
+  </action>
+  <action name="action_cameraParameters">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Camera parameters</string>
+   </property>
+  </action>
+  <action name="actionCalibration_source_files">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Calibration source files</string>
+   </property>
+  </action>
+  <action name="actionXYZ_Positions_graphs">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>XYZ Positions graphs</string>
+   </property>
+  </action>
+  <action name="actionAjouter_rect_ROI">
+   <property name="text">
+    <string>&amp;Ajouter rect ROI</string>
+   </property>
+  </action>
+  <action name="actionAjouter_ligne_ROI">
+   <property name="text">
+    <string>Ajouter &amp;ligne ROI</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_rect_ROI">
+   <property name="text">
+    <string>&amp;Supprimer rect ROI</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_ligne_ROI">
+   <property name="text">
+    <string>Supprimer ligne &amp;ROI</string>
+   </property>
+  </action>
+  <action name="actionComposite_parameters">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Composite &amp;parameters</string>
+   </property>
+  </action>
+  <action name="actionPrint_logs">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Print logs</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionShow_Physical_Plot_Dock_Widget">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Show Physical Plots Dock Widget</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+&amp;</string>
+   </property>
+  </action>
+  <action name="actionShow_Composite_Plots_Dock_Widget">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Plots &amp;Composite Dock Widget</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+É</string>
+   </property>
+  </action>
+  <action name="actionLog_console">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>C&amp;onsole</string>
+   </property>
+  </action>
+  <action name="actionNavigation_tools">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Navigation tools</string>
+   </property>
+  </action>
+  <action name="actionTarget_visualizer">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Target visualizer</string>
+   </property>
+  </action>
+  <action name="actionSTL_visualizer">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;STL visualizer</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

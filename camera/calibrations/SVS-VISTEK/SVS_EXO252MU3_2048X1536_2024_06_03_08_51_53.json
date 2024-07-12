@@ -1,0 +1,38 @@
+{
+    "camera_manufacturer": "SVS-VISTEK",
+    "camera_model": "SVS_EXO252MU3",
+    "camera_matrix": [
+        [
+            3585.777761778877,
+            0.0,
+            991.1688384955622
+        ],
+        [
+            0.0,
+            3585.777761778877,
+            746.935814994824
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ]
+    ],
+    "distortion_coefficients": [
+        [
+            -0.05957360693563844,
+            -0.014258458790039386,
+            0.0,
+            0.0,
+            1.3772511441420763
+        ]
+    ],
+    "compression": "None",
+    "resolution": "2048X1536",
+    "lens_focal_length": "12",
+    "working_distance": "600",
+    "date": "03/06/2024",
+    "operator": "None",
+    "dataset_type": "camera calibration",
+    "description": "calibration"
+}

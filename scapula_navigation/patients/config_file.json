@@ -1,0 +1,16 @@
+{
+    "loobs": {
+        "driller": {
+            "loob_name": "CM_116_135_driller",
+            "subloob_name": "composite.json"
+        },
+        "scapula": {
+            "loob_name": "CM_166_185_scapula",
+            "subloob_name": "composite.json"
+        },
+        "stylus": {
+            "loob_name": "CM_073_092_stylus",
+            "subloob_name": "composite.json"
+        }
+    }
+}

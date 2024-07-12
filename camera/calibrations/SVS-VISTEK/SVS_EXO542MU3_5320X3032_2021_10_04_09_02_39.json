@@ -1,0 +1,38 @@
+{
+    "camera_manufacturer": "SVS-VISTEK",
+    "camera_model": "SVS_EXO542MU3",
+    "camera_matrix": [
+        [
+            5827.696811131073,
+            0.0,
+            2669.455434046977
+        ],
+        [
+            0.0,
+            5827.696811131073,
+            1486.5372719071788
+        ],
+        [
+            0.0,
+            0.0,
+            1.0
+        ]
+    ],
+    "distortion_coefficients": [
+        [
+            -0.13493457758781593,
+            0.1517234028235124,
+            0.0,
+            0.0,
+            0.5265708680147619
+        ]
+    ],
+    "compression": "None",
+    "resolution": "5320x3032",
+    "lens_focal_length": "16",
+    "working_distance": "70",
+    "date": "04/10/2021",
+    "operator": "None",
+    "dataset_type": "camera calibration",
+    "description": "calibration"
+}

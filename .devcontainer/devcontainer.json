@@ -1,0 +1,59 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "celmo-pytouch_exe",
+    
+    "image": "celmo/pytouch_exe:0.1_py311",
+    // "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/pytouch,type=bind",
+    // "workspaceFolder": "/workspaces",
+    // "build": {
+    //     "dockerfile": "./Dockerfile"
+    // },
+    "mounts":[
+        "source=/dev,target=/dev,type=bind,consistency=cached",
+        "source=/var/run/dbus,target=/var/run/dbus,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached",
+        "source=/run/udev,target=/run/udev,type=bind,consistency=cached", 
+        "source=${localEnv:HOME}/Git/pycopo,target=/workspaces/pycopo,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/Git/pycama,target=/workspaces/pycama,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/Git/image_datasets,target=/workspaces/image_datasets,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/Git/carmen,target=/workspaces/carmen,type=bind,consistency=cached",
+        "source=${localEnv:HOME}/Git/igus,target=/workspaces/igus,type=bind,consistency=cached"
+    ],
+    "runArgs": [
+        "--privileged",
+        "--net=host"
+        // "--cpuset-cpus=0-5" // limit to 6 cores
+
+    ],
+
+	"customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "terminal.integrated.profiles.linux": {
+                    "bash (container default)": {
+                        "path": "/bin/bash",
+                        "overrideName": true
+                    }
+                }
+            },
+            "extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"GitHub.copilot-labs",
+				"ms-python.black-formatter",
+				"ms-python.isort",
+				"PKief.material-icon-theme",
+				"ms-toolsai.jupyter",
+				"James-Yu.latex-workshop",
+				"mathematic.vscode-latex",
+				"mhutchie.git-graph"
+			]
+        }
+    },
+	"postCreateCommand": "/bin/bash /workspaces/pytouch/.devcontainer/postCreateCommand.sh",
+    "postStartCommand": "/bin/bash /workspaces/pytouch/.devcontainer/postStartCommand.sh"
+}

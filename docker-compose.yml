@@ -1,0 +1,16 @@
+
+services:
+  app:
+    image: celmo/pytouch_exe:0.1_py311
+    volumes:
+      - .:/workspace/
+      - /dev:/dev
+      - /run/udev:/run/udev
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ~/.Xauthority:/home/vscode/.Xauthority
+    environment:
+      - DISPLAY=$DISPLAY
+    privileged: true
+    network_mode: host
+    tty: true
+    entrypoint: ["/bin/bash", "-c", "cd /workspace/ && ./main"]
